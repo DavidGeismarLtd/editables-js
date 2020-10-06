@@ -1,0 +1,11 @@
+{
+  "name": "editables-js",
+  "version": "1.0.0",
+  "description": "Javascript goodies for the editables rails rengine",
+  "main": "index.js",
+  "author": "david geismar <davidgeismar@hotmail.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "medium-editor": "^5.23.3"
+  }
+}
