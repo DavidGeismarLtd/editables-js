@@ -1,9 +1,9 @@
 import TextEditableStrategy from './textEditableStrategy.js'
 import ImageEditableStrategy from './imageEditableStrategy.js'
 class ContentEditable {
-  constructor(editableKind){
+  constructor(editableKind, strategy = null){
     this.editables =  document.querySelectorAll(`[data-editablekind='${editableKind}']`);
-    this.editionStrategy = this.getStrategy(editableKind)
+    this.editionStrategy = strategy || this.getStrategy(editableKind)
   }
 
   init(){
